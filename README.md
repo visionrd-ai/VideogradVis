@@ -27,17 +27,14 @@ This document provides visualizations explaining the model's predictions on whet
 
 ## Visualizations
 
-### Figure 1: Visualization Explaining Model's Prediction That the Headlight is ON
 
 ![Prediction: HeadLight ON](output.gif)  
 *Figure 1: Visualization explaining the model's prediction that the headlight is ON.*
 
-### Figure 2: Detailed Grads Highlighting Reasons Behind the ON Headlight Prediction
 
 ![Prediction: HeadLight ON](output1.gif)  
 *Figure 2: Detailed grads highlighting reasons behind the ON headlight prediction.*
 
-### Figure 3: Insights Into the Model Predicting the Headlight as OFF
 
 ![Prediction: HeadLight OFF](output3.gif)  
 *Figure 3: Insights into the model predicting the headlight as OFF.*
