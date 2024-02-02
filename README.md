@@ -28,3 +28,19 @@ vis.compute_grad(input_tensor=input_model, path='/home/osama/pytorch-video/outpu
   </figure>
 </div>
 
+<div align="center">
+  <figure>
+      <img width="20%" src="output1.gif" alt="Prediction: HeadLight ON">
+      <figcaption>Figure 1: Grads showing why model predicted Headlight is ON.</figcaption>
+  </figure>
+</div>
+
+<div align="rght">
+  <figure>
+      <img width="20%" src="output3.gif" alt="Prediction: HeadLight OFF">
+      <figcaption>Figure 1: Grads showing why model predicted Headlight is OFF.</figcaption>
+  </figure>
+</div>
+
+
+
