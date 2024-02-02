@@ -21,7 +21,7 @@ model_input = torch.rand((1,3,120,250,250)).requires_grad_(True) #(B,C,T,H,W)
 vis.compute_grad(input_tensor=input_model, path='/home/osama/pytorch-video/output/')
 
 ```
-<div align="center">
+<div align="left">
   <figure>
       <img width="20%" src="output.gif" alt="Prediction: HeadLight ON">
       <figcaption>Figure 1: Grads showing why model predicted Headlight is ON.</figcaption>
