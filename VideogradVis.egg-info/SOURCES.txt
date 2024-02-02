@@ -1,0 +1,7 @@
+setup.py
+VideogradVis/Vis.py
+VideogradVis/__init__.py
+VideogradVis.egg-info/PKG-INFO
+VideogradVis.egg-info/SOURCES.txt
+VideogradVis.egg-info/dependency_links.txt
+VideogradVis.egg-info/top_level.txt
