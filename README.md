@@ -1,4 +1,4 @@
-VideogradVis Library to Visulaize Pytorch models Gradients to understand model depth 
+VideogradVis is an advanced package that encompasses cutting-edge methods for Explainable AI (XAI) in the realm of computer vision. This versatile tool is designed to facilitate the diagnosis of model predictions, serving a dual purpose in both production environments and during the model development phase. Beyond its practical applications, the project also serves as a comprehensive benchmark, offering a robust foundation for researchers to explore and evaluate novel explainability methods.
 
 ## <div align="center">Installation</div>
 ```bash
