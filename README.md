@@ -2,9 +2,9 @@
 
 VideogradVis is an advanced package that encompasses cutting-edge methods for Explainable AI (XAI) in the realm of computer vision. This versatile tool is designed to facilitate the diagnosis of model predictions, serving a dual purpose in both production environments and during the model development phase. Beyond its practical applications, the project also serves as a comprehensive benchmark, offering a robust foundation for researchers to explore and evaluate novel explainability methods.
 
-1. Compatibility Assurance: Rigorously tested on a multitude of Common Convolutional Neural Networks (CNNs).
+1. **Compatibility Assurance**: Rigorously tested on a multitude of Common Convolutional Neural Networks (CNNs).
 
-2. Versatile Applications: Unleash the full potential of VideogradVis across a spectrum of advanced use cases. From Classification and Object Detection to Semantic Segmentation, Embedding-similarity, and beyond, this suite empowers your projects with unparalleled flexibility and performance.
+2. **Versatile Applications**: Unleash the full potential of VideogradVis across a spectrum of advanced use cases. From Classification and Object Detection to Semantic Segmentation, Embedding-similarity, and beyond, this suite empowers your projects with unparalleled flexibility and performance.
 
 ## <div align="center">APPROACH</div>
 1. ***Imports***:
@@ -57,17 +57,21 @@ This document provides visualizations explaining the model's predictions on whet
 
 ## Visualizations
 
+The model demonstrates which pixels are causing the neurons to fire for the case of headlight/blinker on. In the case of blinkers, the small yellow bulb at the corner has significant contribution. In headlight, the entire headlight region contributes to the model's headlight=ON prediction
 
-![Prediction: HeadLight ON](output.gif)  
-*Figure 1: Visualization explaining the model's prediction that the headlight is ON.*
-
-
-![Prediction: HeadLight ON](output1.gif)  
-*Figure 2: Detailed grads highlighting reasons behind the ON headlight prediction.*
+![Prediction: HeadLight ON](head_out1.gif)
 
 
-![Prediction: HeadLight OFF](output3.gif)  
-*Figure 3: Insights into the model predicting the headlight as OFF.*
+![Prediction: HeadLight ON](head_out2.gif)
+***Figure 1: Localized gradients of a video classifier predicting the state of a car headlight (whether it is on, off, or defective)***
+
+
+![Prediction: HeadLight ON](test_out.gif)
+
+
+![Prediction: HeadLight ON](test_out2.gif)  
+***Figure 2: Localized gradients of a video classifier predicting the state of a car blinkers (whether it is on, off, or defective).***
+
 
 
 
