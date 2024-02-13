@@ -1,6 +1,16 @@
+<p align="center">
+  <a href="https://ultralytics.com/">
+  <img width="700" src="https://github.com/visionrd-ai/.github/assets/145563962/79a92550-c2e4-49f3-8229-bfe6545e54ea"></a>
+</p>
+
+
+
+
+
+
 ## <div align="center">VIDEOGRAD VIS</div>
 
-VideogradVis is an advanced package that encompasses cutting-edge methods for Explainable AI (XAI) in the realm of computer vision. This versatile tool is designed to facilitate the diagnosis of model predictions, serving a dual purpose in both production environments and during the model development phase. Beyond its practical applications, the project also serves as a comprehensive benchmark, offering a robust foundation for researchers to explore and evaluate novel explainability methods.
+VideogradVis is an advanced package that encompasses cutting-edge methods for Explainable AI (XAI) in the realm of computer vision. This versatile, video based tool is designed to facilitate the diagnosis of model predictions, serving a dual purpose in both production environments and during the model development phase. Beyond its practical applications, the project also serves as a comprehensive benchmark, offering a robust foundation for researchers to explore and evaluate novel explainability methods.
 
 1. **Compatibility Assurance**: Rigorously tested on a multitude of Common Convolutional Neural Networks (CNNs).
 
