@@ -50,7 +50,7 @@ python setup.py install
 import torch
 from VideogradVis.Vis import GradVis
 
-odel = torch.hub.load('facebookresearch/pytorchvideo', 'x3d_m', pretrained=True)
+model = torch.hub.load('facebookresearch/pytorchvideo', 'x3d_m', pretrained=True)
 model.blocks[5].proj = nn.Linear(in_features = 2048, out_features = args.classes, bias = True)
 print(f"Loading weights: {args.checkpoint}.")
 model.load_state_dict(torch.load(args.checkpoint))
