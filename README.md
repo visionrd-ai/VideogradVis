@@ -47,18 +47,19 @@ python setup.py install
 
 ## <div align="center">Usage</div>
 ```bash
-import torch
-from VideogradVis.Vis import GradVis
 
-model = torch.hub.load('facebookresearch/pytorchvideo', 'x3d_m', pretrained=True)
-model.blocks[5].proj = nn.Linear(in_features = 2048, out_features = args.classes, bias = True)
-print(f"Loading weights: {args.checkpoint}.")
-model.load_state_dict(torch.load(args.checkpoint))
+from VideoGradVis import grad_vis
 
-vis = GradVis(model)
+video_model = get_video_classifier() # Import your model
+weights = torch.load(args.weights_path) # Load your weights
+video_model.load_state_dict(weights)
 
-model_input = torch.rand((1,3,120,250,250)).requires_grad_(True) #(B,C,T,H,W)
-vis.compute_grad(input_tensor=input_model, path='/home/osama/pytorch-video/output/')
+video_tensor  = torch.rand((1,3,args.clip_length,args.height,args.width)).requires_grad_(True) # Dummy input
+
+bp = grad_vis.GuidedBackpropagation(video_model, selected_layer, grad_channels) # Initialize guided backprop
+result = bp.visualize(video_tensor, 0)  # Visualize
+
+# Save after post processing (more details in demo.py)
 
 ```
 # Model Predictions Visualization
